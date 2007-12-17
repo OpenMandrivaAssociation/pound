@@ -17,7 +17,6 @@ Requires(postun): rpm-helper
 Requires:	openssl
 BuildRequires:	openssl-devel
 BuildRequires:	pcre-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 The Pound program is a reverse proxy, load balancer and HTTPS
