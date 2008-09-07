@@ -1,11 +1,11 @@
 Summary:	A reverse-proxy and load-balancer
 Name:		pound
-Version:	2.2.3
-Release:	%mkrel 4
+Version:	2.4.3
+Release:	%mkrel 1
 Group:		System/Servers
 License:	GPL
 URL:		http://www.apsis.ch/pound/
-Source0:	http://www.apsis.ch/pound/Pound-%{version}.tar.bz2
+Source0:	http://www.apsis.ch/pound/Pound-%{version}.tgz
 Source1:	pound.cfg
 Source2:	pound.init
 Source3:	pound-openssl.cnf
@@ -17,7 +17,7 @@ Requires(postun): rpm-helper
 Requires:	openssl
 BuildRequires:	openssl-devel
 BuildRequires:	pcre-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The Pound program is a reverse proxy, load balancer and HTTPS
