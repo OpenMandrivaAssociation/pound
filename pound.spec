@@ -1,6 +1,6 @@
 Summary:	A reverse-proxy and load-balancer
 Name:		pound
-Version:	2.4.3
+Version:	2.4.4
 Release:	%mkrel 1
 Group:		System/Servers
 License:	GPL
