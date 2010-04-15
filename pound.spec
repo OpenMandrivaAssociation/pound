@@ -1,7 +1,7 @@
 Summary:	A reverse-proxy and load-balancer
 Name:		pound
 Version:	2.5
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		System/Servers
 License:	GPLv2
 URL:		http://www.apsis.ch/pound/
@@ -9,6 +9,7 @@ Source0:	http://www.apsis.ch/pound/Pound-%{version}.tgz
 Source1:	pound.cfg
 Source2:	pound.init
 Source3:	pound-openssl.cnf
+Patch0:		pound-2.5-openssl.patch
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
 Requires(pre): rpm-helper
@@ -24,6 +25,7 @@ front-end for Web server(s).
 
 %prep
 %setup -q -n Pound-%{version}
+%patch0 -p1
 
 cp %{SOURCE1} %{name}.cfg
 cp %{SOURCE2} %{name}.init
