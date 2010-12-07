@@ -1,7 +1,7 @@
 Summary:	A reverse-proxy and load-balancer
 Name:		pound
 Version:	2.5
-Release:	%mkrel 2
+Release:	%mkrel 3
 Group:		System/Servers
 License:	GPLv2
 URL:		http://www.apsis.ch/pound/
