@@ -14,6 +14,7 @@ Requires(preun): rpm-helper
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
 Requires:	openssl
+BuildRequires:	openssl
 BuildRequires:	openssl-devel
 BuildRequires:	pcre-devel
 
