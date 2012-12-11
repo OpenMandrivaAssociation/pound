@@ -1,5 +1,2 @@
 sources:
-  "Pound-2.6.tgz:"	91ba84c6db579b06dc82fceb790e55e344b1dc40
-  "pound.cfg:"	f2814f8b8668673b6b6fe108a0ba434208094593
-  "pound.init:"	97c5ef122755a16824f4239943b98204f16a52f5
-  "pound-openssl.cnf:"	708e63e3eebddc3a82c11dda25ebbfbbf735166c
+  "Pound-2.6.tgz": 91ba84c6db579b06dc82fceb790e55e344b1dc40

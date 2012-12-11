@@ -14,8 +14,8 @@ Requires(preun): rpm-helper
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
 Requires:	openssl
-BuildRequires:	openssl
 BuildRequires:	openssl-devel
+BuildRequires:	openssl
 BuildRequires:	pcre-devel
 
 %description
@@ -92,3 +92,71 @@ fi
 %attr(0644,root,root) %config(missingok,noreplace) %verify(not md5 size mtime) %{_sysconfdir}/pki/%{name}/%{name}.cnf
 %{_mandir}/man8/*
 %dir /var/run/pound
+
+
+%changelog
+* Mon Feb 20 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 2.6-1mdv2011.0
++ Revision: 778153
+- new version 2.6
+- dropped patch applied upstream
+
+* Tue Dec 07 2010 Oden Eriksson <oeriksson@mandriva.com> 2.5-3mdv2011.0
++ Revision: 614607
+- the mass rebuild of 2010.1 packages
+
+* Thu Apr 15 2010 Funda Wang <fwang@mandriva.org> 2.5-2mdv2010.1
++ Revision: 534995
+- add fedora patch to build with openssl 1.0
+
+* Tue Mar 02 2010 Sandro Cazzaniga <kharec@mandriva.org> 2.5-1mdv2010.1
++ Revision: 513603
+- update to 2.5
+- fix license
+- drop old patch (that was applied upstream)
+
+* Mon Jun 22 2009 Oden Eriksson <oeriksson@mandriva.com> 2.4.4-1mdv2010.0
++ Revision: 387979
+- 2.4.4
+
+* Sun Sep 07 2008 Oden Eriksson <oeriksson@mandriva.com> 2.4.3-1mdv2009.0
++ Revision: 282184
+- 2.4.3
+
+* Fri Aug 01 2008 Thierry Vignaud <tv@mandriva.org> 2.2.3-4mdv2009.0
++ Revision: 259250
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 2.2.3-3mdv2009.0
++ Revision: 247165
+- rebuild
+
+* Wed Jan 02 2008 Olivier Blin <blino@mandriva.org> 2.2.3-1mdv2008.1
++ Revision: 140735
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Fri Jan 26 2007 Oden Eriksson <oeriksson@mandriva.com> 2.2.3-1mdv2007.0
++ Revision: 114141
+- 2.2.3
+- reworked the config, initscript and added ssl cert generation
+- Import pound
+
+* Sat Feb 04 2006 Spencer Anderson <sdander@mandriva.org> 2.0-1mdk
+- 2.0
+- use mkrel
+
+* Mon Aug 22 2005 Spencer Anderson <sdander@mandriva.org> 1.9-1mdk
+- 1.9
+
+* Sun Dec 12 2004 Spencer Anderson <sdander@oberon.ark.com> 1.8-1mdk
+- 1.8
+
+* Wed May 26 2004 Spencer Anderson <sdander@oberon.ark.com> 1.7-1mdk
+- 1.7
+
+* Fri Feb 27 2004 Olivier Thauvin <thauvin@aerov.jussieu.fr> 1.6-2mdk
+- Own %%{_sysconfdir}/pound
+
