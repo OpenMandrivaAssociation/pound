@@ -4,7 +4,7 @@ Version:	2.7c
 Release:	2
 Group:		System/Servers
 License:	GPLv2
-URL:		http://www.apsis.ch/pound/
+URL:		https://www.apsis.ch/pound/
 Source0:	http://www.apsis.ch/pound/Pound-%{version}.tgz
 Source1:	pound.cfg
 Source2:	pound.service
